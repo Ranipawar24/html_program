@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to forms</title>
+</head>
+<body>
+    <h1>Introduction to forms</h1>
+
+    <form method="POST" action="utkarsh.com">
+      <!-- inputs  -->
+
+      <!-- for: it will take the id for the input element
+       -->
+      <!-- 
+         name: it is the KEY of the FORM SUBMISSION OBJECT.
+        -->
+
+      <label for="firstName">First name *: </label>
+      <input
+        type="text"
+        name="name"
+        id="firstName"
+        placeholder="Enter your name"
+        required
+      />
+      <br />
+      <label for="password">password:</label>
+      <input type="password" name="password" id="password" />
+
+      <!-- Drop-down -->
+
+      <br />
+
+      <label for="pet-select">Choose a pet:</label>
+
+      <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster is cute</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+
+      <!-- check box  -->
+
+      <!-- Default check: checked -->
+
+      <div>
+        <input type="checkbox" id="iceCream" name="iceCream" checked />
+        <label for="iceCream">IceCream</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="nonveg" name="nonveg" />
+        <label for="nonveg">NonVeg</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="noodle" name="noodle" />
+        <label for="noodle">Noodle</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="subway" name="subway" />
+        <label for="subway">Subway</label>
+      </div>
+
+      <!-- radio button -->
+      <div>
+        Select the Gender
+      </div>
+
+      <input type="radio" id="male" name="gender" value="M" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="F" />
+      <label for="female">Female</label>
+
+      <!-- Date and time -->
+      <br />
+      <br />
+      <div>Date and time</div>
+
+      <input
+        name="orderDate"
+        type="date"
+        value="2023-02-05"
+        min="2023-02-02"
+        max="2023-02-22"
+      />
+
+      <!-- FieldSet  -->
+
+      <div>
+        <fieldset>
+          <legend>Choose your favorite Subway sause</legend>
+
+          <input type="radio" id="bbqid" name="sause" value="bbq" />
+          <label for="bbqid">BBQ</label><br />
+
+          <input type="radio" id="mayoid" name="sause" value="mayo" />
+          <label for="mayoid">Mayonise</label><br />
+
+          <input type="radio" id="chipid" name="sause" value="chip" />
+          <label for="chipid">chipotle</label>
+        </fieldset>
+      </div>
+
+      <!-- submit button -->
+      <div>
+        <input type="submit" onclick="bah(event)" />
+      </div>
+    </form>
+    
+</body>
+</html>
